@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("emyu.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+.content {
+    display: flex;
+}
+
+.kotak {
+    display: flex;
+}
+
+.judul {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+}
+
+.satu, .dua, .tiga {
+    flex: 1;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.satu p, .dua p, .tiga p{
+    margin-top: 10px;
+}
+
+.satu,.tiga{
+    padding-top: 100px;
+    left: 0;
+}
+
+.dua{
+    padding-top: 50px;
+}
+
+
+.welcome {
+    justify-content: center;
+    height: 100vh;
+    flex: 1;
+  }
+  
+.welcome h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 80px;
+}
+
+nav{
+    color: rgb(15, 15, 14);
+    padding: 20px 0 10px 30px;
+    font-size: 20px;
+  } 
+
+nav a{
+    padding: 10px 40px 10px 40px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: ease-in-out ;
+}
+  
+footer{
+    left: 0;
+    right: 0;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position:absolute;
+}
+
+footer p{
+    margin: 0;
+    font-size: 14px;
+
+}
+  
+  
+  
+  
